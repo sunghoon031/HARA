@@ -1,2 +1,1 @@
-# HARA
-HARA: A Hierarchical Approach for Robust Rotation Averaging
+Code will be made available soon...
