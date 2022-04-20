@@ -16,3 +16,8 @@ year      = {2021},
 
 ### Quick start
 Run `Test_HARA.m` to try it on a synthetic data WITHOUT using the number of inlier matches.
+
+### Main functions:
+1. `CreateSyntheticData.m`: Generate a synthetic dataset, as described in the main paper.
+2. `RunHARA.m`: Run HARA without using the number of inlier matches.
+3. `RunHARA_usingNumberOfInlierMatches.m`: Run HARA using the number of inlier matches. Note that we only provide the function, without a sample dataset. This function is quite similar to `RunHARA.m`, so it shouldn't be too difficult to use on your own dataset.
