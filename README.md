@@ -1,6 +1,6 @@
 # HARA: A Hierarchical Approach for Robust Rotation Averaging
 
-[Paper](https://arxiv.org/abs/2111.08831), [Supplementary material](https://github.com/seonghun-lee/seonghun-lee.github.io/blob/master/pdf/SupplementaryMaterial_HARA_A_Hierarchical_Approach_for_Robust_Rotation_Averaging.pdf)
+[Paper](https://arxiv.org/abs/2111.08831), [Video](https://www.youtube.com/watch?v=oAR-LMStRS4), [Supplementary material](https://github.com/seonghun-lee/seonghun-lee.github.io/blob/master/pdf/SupplementaryMaterial_HARA_A_Hierarchical_Approach_for_Robust_Rotation_Averaging.pdf)
 
 In this repository, we provide the implementation of HARA. If you use our code, please cite it as follows:
 
