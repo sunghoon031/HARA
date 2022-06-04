@@ -11,11 +11,11 @@ function R = ChordalL1Mean(R_input, b_outlier_rejection, n_iterations, thr_conve
     
   
     s = median(vectors_total,2);
-    
+
     
     % 2. Optimize
     for j = 1:n_iterations
-        if (sum(sum(abs(vectors_total-s))==0) ~= 0)
+        if (sum(sum(abs(vectors_total-repmat(s,1,n_samples)))==0) ~= 0)
             s = s+rand(size(s,1),1)*0.001;
         end
 
