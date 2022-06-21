@@ -10,7 +10,7 @@ function out = UniformSampling(data, r)
     quotient = floor(n/r);
     remainder = n-r*quotient;
     if (remainder==0)
-        out = quotient:quotient:n;
+        out = data(quotient:quotient:n);
         return;
     end
     out = nan(1, r);
