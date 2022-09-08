@@ -5,12 +5,13 @@
 In this repository, we provide the implementation of HARA. If you use our code, please cite it as follows:
 
 ````
-@article{hara,
-author = {Seong Hun Lee and Javier Civera},
-title = {HARA: A Hierarchical Approach for Robust Rotation Averaging},
-journal   = {CoRR},
-volume    = {abs/2111.08831},
-year      = {2021},
+@InProceedings{Lee_2022_CVPR,
+    author    = {Lee, Seong Hun and Civera, Javier},
+    title     = {{HARA}: A Hierarchical Approach for Robust Rotation Averaging},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {15777--15786}
 }
 ````
 
