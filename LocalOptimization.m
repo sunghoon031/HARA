@@ -90,7 +90,13 @@ function [R_est, time_iterations, iterations] = LocalOptimization(R_init, edge_I
         W = sparse(1:length(w), 1:length(w), w, length(w), length(w));
         WA =W*A;  % [nEdges x (nViews-1)]
         
-        v(2:end,:) = WA\WB; % [(nViews-1) x 3]
+        % We replace the following line...
+        % v(2:end,:) = WA\WB; % [(nViews-1) x 3]
+        % ... by the following two lines, as it is much faster due to MATLAB's specialized procedure involving a positive symmetric matrix.
+        
+        ATWTWA = WA'*WA;
+        v(2:end,:) = ATWTWA\(WA'*WB); % [(nViews-1) x 3]
+        
         
         residuals_sq = A*v(2:end,:)-B;
         residuals_sq = sum(residuals_sq.^2, 2);
