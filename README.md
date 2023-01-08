@@ -14,6 +14,9 @@ In this repository, we provide the implementation of HARA. If you use our code, 
     pages     = {15777--15786}
 }
 ````
+### Update (January 8th 2023)
+
+[This recent change in the code](https://github.com/sunghoon031/HARA/commit/00d88296a6be1e2693d4f1e50397f84bad21003b) leads to a significant speedup of the local optimization step compared to the version used for the CVPR paper. We thank Chitturi Sidhartha, the first author of a 3DV paper titled ['It Is All In The Weights: Robust Rotation Averaging Revisited'](https://ieeexplore.ieee.org/document/9665962), for the discussion that led to this finding.
 
 ### Quick start
 Run `Test_HARA.m` to try it on a synthetic data WITHOUT using the number of inlier matches.
